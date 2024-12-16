@@ -1,0 +1,129 @@
+#header {
+    padding: 15px 15rem;
+    @include max(1600px) {
+        padding: 15px 10rem;
+    }
+    @include max(1500px) {
+        padding: 15px 5rem;
+    }
+    @include max(1150px) {
+        padding: 10px 2rem;
+    }
+    @include max(575px) {
+        padding: 0 15px;
+    }
+    .navbar {
+        .navbar-nav {
+            align-items: center;
+            margin-top: 0;
+            .nav-item {
+                margin: 0 15px;
+                @include max(1280px) {
+                    margin: 0 10px;
+                }
+                @include max(992px) {
+                    margin: 0;
+                    padding: 12px 0;
+                    border-bottom: 1px solid #000;
+                    width: 100%;
+                }
+                .nav-link {
+                    color: #231F20;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: -0.27px;
+                }
+            }
+        }
+        .w-btn {
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18px;
+            text-transform: uppercase;
+            border-radius: 6px;
+            background: #1842CA;
+            padding: 20px 40px;
+            &:focus {
+                box-shadow: none;
+            }
+            @include max(1400px) {
+                font-size: 14px;
+                line-height: 16px;
+                padding: 15px 25px;
+            }
+            @include max(992px) {
+                margin: 20px 0 0;
+            }
+        }
+    }
+    .navbar-toggler {
+        padding: 0;
+        border: 0;
+        &:focus {
+            box-shadow: none;
+        }
+        #navicon {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            padding: 0;
+            border-radius: 5px;
+            display: flex;
+            justify-content: flex-end;
+            @include max(575px) {
+                margin: -10px 0 0;
+                &.home {
+                    span {
+                        background: #231F20;
+                    }
+                }
+            }
+            span {
+                display: block;
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                background: #231F20;
+                border-radius: 10px;
+                opacity: 1;
+                margin: 0 auto;
+                transform: rotate(0deg);
+                transition: 0.25s ease-in-out;
+                &:first-child {
+                    top: 9px;
+                    width: 70%;
+                    left: 0;
+                }
+                &:last-child {
+                    top: 21px;
+                    width: 70%;
+                }
+                &:nth-child(2) {
+                    top: 15px;
+                }
+                @include max(575px) {
+                    background: #fff;
+                }
+            }
+            &.open {
+                span {
+                    &:first-child {
+                        transform: rotate(135deg);
+                        top: 15px;
+                        width: 100%;
+                    }
+                    &:last-child {
+                        transform: rotate(-135deg);
+                        top: 15px;
+                        width: 100%;
+                    }
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}

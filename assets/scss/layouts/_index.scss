@@ -1,0 +1,499 @@
+.top-area {
+    background: url(../images/bg01.png) no-repeat;
+    background-size: 100%;
+    @include max(992px) {
+        background-size: cover;
+    }
+    @include max(575px) {
+        background: url(../images/mob01.png) no-repeat;
+        background-size: cover;
+    }
+    .t-block {
+        padding: 8rem 0 7rem;
+        @include max(1500px) {
+            padding: 4rem 0 3rem;
+        }
+        @include max(992px) {
+            padding: 3rem 2rem 3rem;
+            .img-hold {
+                margin: 0 0 30px;
+            }
+        }
+        @include max(575px) {
+            padding: 2rem 5px 3rem;
+        }
+        .t-area {
+            padding: 0 0 0 14rem;
+            @include max(1600px) {
+                padding: 0 0 0 9rem;
+            }
+            @include max(1500px) {
+                padding: 0 0 0 5rem;
+            }
+            @include max(1150px) {
+                padding: 0 0 0 2rem;
+            }
+            @include max(992px) {
+                padding: 0;
+                text-align: center;
+            }
+            h1 {
+                color:  #000;
+                font-size: 64px;
+                font-weight: 700;
+                line-height: 72px;
+                margin: 0 0 15px;
+                @include max(1500px) {
+                    font-size: 50px;
+                    line-height: 62px;
+                }
+                @include max(1400px) {
+                    font-size: 40px;
+                    line-height: 52px;
+                }
+                @include max(1024px) {
+                    font-size: 35px;
+                    line-height: 45px;
+                }
+            }
+            p {
+                font-family: Rubik;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 32px;
+                margin: 0 0 20px;
+                @include max(1500px) {
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+                a {
+                    color: #5FC7AF;
+                }
+                span {
+                    color: #73AFEB;
+                }
+            }  
+            .t-btn {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: #fff;
+                padding: 20px 30px;
+                background: #1842CA;
+                border-radius: 6px 6px;
+                margin: 20px 0 0;
+                &:focus {
+                    box-shadow: none;
+                }
+                @include max(575px) {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
+.it-area {
+    padding: 4rem 14rem;
+    @include max(1600px) {
+        padding: 4rem 9rem;
+    }
+    @include max(1500px) {
+        padding: 4rem 5rem;
+    }
+    @include max(1150px) {
+        padding: 3rem 2rem;
+    }
+    @include max(575px) {
+        padding: 3rem 15px;
+    }
+    background: rgba(115, 175, 235, 0.03);
+    .text-bar {
+        padding: 0 0 0 2rem;
+        @include max(992px) {
+            padding: 0;
+            text-align: center;
+        }
+        h2 {
+            color:#000;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 68px;
+            margin: 0 0 18px;
+            @include max(1500px) {
+                font-size: 50px;
+                line-height: 60px;
+            }
+            @include max(1400px) {
+                font-size: 40px;
+                line-height: 50px;
+            }
+            @include max(1024px) {
+                font-size: 35px;
+                line-height: 45px;
+            }
+            @include max(575px) {
+                br {
+                    display: none;
+                }
+            }
+        }
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            margin: 0 0 20px;
+            color: #000;
+            span {
+                color: #5FC7AF;
+            }
+        }
+        .t-btn {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 20px 30px;
+            background: #1842CA;
+            border-radius: 6px 6px;
+            margin: 20px 0 0;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}
+.offer-area {
+    padding: 5rem 14rem;
+    @include max(1600px) {
+        padding: 4rem 9rem;
+    }
+    @include max(1500px) {
+        padding: 4rem 5rem;
+    }
+    @include max(1400px) {
+        padding: 4rem 3rem;
+    }
+    @include max(1150px) {
+        padding: 3rem 0rem;
+    }
+    h2 {
+        text-align: center;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 62px;
+        margin: 0 0 10px;
+        color: #000;
+        @include max(1500px) {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        @include max(1400px) {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        @include max(1024px) {
+            font-size: 35px;
+            line-height: 45px;
+        }
+    }
+    p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #000;
+        margin: 0 0 5rem;
+        opacity: 0.72;
+        @include max(992px) {
+            br {
+                display: none;
+            }
+            padding: 0 3rem;
+            margin: 0 0 1rem;
+        }
+        @include max(575px) {
+            padding: 0;
+        }
+    }
+    .box {
+        padding: 45px 25px;
+        position: relative;
+        @include max(992px) {
+            text-align: center;
+        }
+        @include max(575px) {
+            padding: 25px 25px;
+        }
+        &::before {
+            position: absolute;
+            top: 35px;
+            left: auto;
+            right: 0;
+            bottom: 0;
+            width: 1px;
+            height: 83%;
+            background: rgba(0, 0, 0, 0.18);
+            content: "";
+            @include max(992px) {
+                display: none;
+            }
+        }
+        &::after {
+            position: absolute;
+            top: auto;
+            left: 25px;
+            right: 0;
+            bottom: 0;
+            width: 83%;
+            height: 1px;
+            background: rgba(0, 0, 0, 0.18);
+            content: "";
+            @include max(992px) {
+                left: 0;
+                width: 100%;
+            }
+        }
+        img {
+            margin: 0 0 30px;
+        }
+        h3 {
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 38px;
+            margin: 0 0 15px;
+            @include max(1500px) {
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            opacity: 0.72;
+            text-align: left;
+            margin: 0;
+            color: #000;
+            opacity: 0.72;
+            @include max(1500px) {
+                font-size: 18px;
+                line-height: 24px;
+            }
+            @include max(992px) {
+                text-align: center;
+                br {
+                    display: none;
+                }
+            }
+        }
+        &.last {
+            &:before {
+                display: none;
+            }
+        }
+        &.new {
+            &:after {
+                display: none;
+                @include max(992px) {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.pro-area {
+    padding: 0 14rem 5rem;
+    @include max(1600px) {
+        padding: 4rem 9rem;
+    }
+    @include max(1500px) {
+        padding: 4rem 5rem;
+    }
+    @include max(1150px) {
+        padding: 3rem 2rem;
+    }
+    @include max(992px) {
+        padding: 0 2rem 3rem;
+    }
+    @include max(575px) {
+        padding: 0 15px 3rem;
+    }
+    h2 {
+        text-align: center;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 62px;
+        margin: 0 0 10px;
+        color: #000;
+        @include max(1500px) {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        @include max(1400px) {
+            font-size: 40px;
+            line-height: 50px;
+        }
+        @include max(1024px) {
+            font-size: 35px;
+            line-height: 45px;
+        }
+    }
+    p {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #000;
+        margin: 0 0 3rem;
+        opacity: 0.72;
+        @include max(992px) {
+            br {
+                display: none;
+            }
+        }
+        @include max(575px) {
+            margin: 0 0 2rem;
+        }
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        li {
+            width: 25%;
+            @include max(1400px) {
+                padding: 0 15px;
+            }
+            @include max(575px) {
+                width: 50%;
+                padding: 0 10px 15px;
+            }
+        }
+    }
+}
+.con-area {
+    padding: 4rem 14rem;
+    background: rgba(115, 175, 235, 0.06);
+    @include max(1600px) {
+        padding: 4rem 9rem;
+    }
+    @include max(1500px) {
+        padding: 4rem 5rem;
+    }
+    @include max(1150px) {
+        padding: 3rem 2rem;
+    }
+    @include max(375px) {
+        padding: 3rem 15px;
+    }
+    .t-block {
+        padding: 0 3rem 0 0;
+        @include max(992px) {
+            padding: 0;
+            margin: 0 0 2.5rem;
+            text-align: center;
+        }
+        h2 {
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 62px;
+            margin: 0 0 12px;
+            color: #000;
+            @include max(1500px) {
+                font-size: 50px;
+                line-height: 60px;
+            }
+            @include max(1400px) {
+                font-size: 40px;
+                line-height: 50px;
+            }
+            @include max(1024px) {
+                font-size: 35px;
+                line-height: 45px;
+            }
+        }
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            margin: 0 0 25px;
+            color: #000;
+            opacity: 0.72;
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 26px;
+            margin: 0 0 12px;
+            @include max(1500px) {
+                font-size: 20px;
+                line-height: 22px;
+            }
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            margin: 50px 0 0;
+            @include max(992px) {
+                justify-content: center;
+                margin: 25px 0 0;
+            }
+            li {
+                margin: 0 18px 0 0;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .form-block {
+        input {
+            border-radius: 6px 6px;
+            background: #fff;
+            border: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            color: rgba(0, 0, 0, 0.72);
+            padding: 20px 20px;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        textarea {
+            border-radius: 6px 6px;
+            background: #fff;
+            border: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            color: rgba(0, 0, 0, 0.72);
+            padding: 20px 20px;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        .s-btn {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 20px 30px;
+            background: #1842CA;
+            border-radius: 6px 6px;
+            margin: 40px 0 0;
+            &:focus {
+                box-shadow: none;
+            }
+            @include max(575px) {
+                width: 100%;
+                margin: 10px 0 0;
+            }
+        }
+    }
+}

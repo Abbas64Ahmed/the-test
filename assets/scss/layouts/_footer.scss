@@ -1,0 +1,239 @@
+#footer {
+    .ft-area {
+        padding: 5rem 14rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        @include max(1600px) {
+            padding: 4rem 9rem;
+        }
+        @include max(1500px) {
+            padding: 3rem 5rem 3rem;
+        }
+        @include max(1150px) {
+            padding: 2rem 2.5rem 2rem;
+        }
+        @include max(375px) {
+            padding: 3rem 15px 3rem;
+        }
+        .f-logo {
+            margin: 0 0 20px;
+        }
+        .f-text {
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 26px;
+                color: #000;
+                opacity: 0.72;
+                margin: 0 0 20px;
+                @include max(1200px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            ul {
+                li {
+                    margin: 0 0 15px;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin: 0 10px 0 0;
+                    }
+                    a {
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        color: #000;
+                        opacity: 0.72;
+                        @include max(1200px) {
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .p-link {
+            padding: 0 0 0 8rem;
+            @include max(1400px) {
+                padding: 0 0 0 5rem;
+            }
+            @include max(992px) {
+                padding: 3rem 0;
+            }
+            h3 {
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 26px;
+                margin: 0 0 20px;
+                color: #000;
+                @include max(1200px) {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+            }
+            ul {
+                li {
+                    margin: 0 0 25px;
+                    @include max(1024px) {
+                        margin: 0 0 15px;
+                    }
+                    a {
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        color: #000;
+                        opacity: 0.72;
+                        @include max(1200px) {
+                            font-size: 16px;
+                            line-height: 18px;
+                        }
+                    }
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .n-area {
+            h3 {
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 26px;
+                margin: 0 0 20px;
+                color: #000;
+                @include max(1200px) {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+            }
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 26px;
+                color: #000;
+                opacity: 0.72;
+                margin: 0 0 30px;
+                @include max(1200px) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+            .input-group {
+                @include max(575px) {
+                    background: rgba(115, 175, 235, 0.06);
+                }
+                input {
+                    border-radius: 6px 6px;
+                    background: rgba(115, 175, 235, 0.06);
+                    border: 0;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    color: rgba(0, 0, 0, 0.72);
+                    padding: 20px 20px;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                    @include max(575px) {
+                        background: transparent;
+                        padding: 15px 15px;
+                    }
+                }
+                .s-btn {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 16px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    padding: 20px 30px;
+                    background: #1842CA;
+                    border-radius: 6px 6px;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                    @include max(1400px) {
+                        padding: 15px 15px;
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                    @include max(575px) {
+                        padding: 15px 30px;
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .fb-area {
+        padding: 2rem 14rem 3rem;
+        @include max(1600px) {
+            padding: 2rem 9rem 3rem;
+        }
+        @include max(1500px) {
+            padding: 1.5rem 5rem 2.5rem;
+        }
+        @include max(1150px) {
+            padding: 1.5rem 2.5rem 2rem;
+        }
+        @include max(575px) {
+            padding: 1.5rem 15px 2rem;
+        }
+        .c-text {
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 20px;
+                color: #000;
+                opacity: 0.72;
+                a {
+                    color: #1842CA;
+                }
+                @include max(1200px) {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+                @include max(992px) {
+                    text-align: center;
+                    margin: 0 0 15px;
+                }
+                @include max(575px) {
+                    line-height: 22px;
+                }
+            }
+        }
+        .f-nav {
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                @include max(992px) {
+                    justify-content: center;
+                }
+                li {
+                    margin: 0 30px 0 0;
+                    @include max(575px) {
+                        margin: 0 20px 0 0;
+                    }
+                    a {
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        color: #000;
+                        @include max(1200px) {
+                            font-size: 16px;
+                            line-height: 18px;
+                        }
+                        @include max(575px) {
+                            font-size: 15px;
+                            line-height: 17px;
+                        }
+                    }
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
